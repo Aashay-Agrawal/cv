@@ -19,15 +19,7 @@ const cascadiaMono = Cascadia_Mono({
   fallback: ["ui-monospace", "SFMono-Regular", "Consolas", "monospace"],
 });
 
-// Resolve the deployment base URL for absolute social image URLs
-const deploymentUrl =
-  process.env.NEXT_PUBLIC_SITE_URL ||
-  (process.env.VERCEL_URL
-    ? `https://${process.env.VERCEL_URL}`
-    : "http://localhost:3000");
-
 export const metadata: Metadata = {
-  metadataBase: new URL(deploymentUrl),
   title: "Aashay Agrawal",
   description: "Portfolio",
   icons: {
@@ -37,28 +29,6 @@ export const metadata: Metadata = {
   authors: [{ name: "Aashay Agrawal" }],
   viewport: "width=device-width, initial-scale=1",
   robots: "index, follow",
-  openGraph: {
-    title: "Aashay Agrawal",
-    description: "Portfolio",
-    type: "website",
-    locale: "en_US",
-    siteName: "Aashay Agrawal",
-    url: deploymentUrl,
-    images: [
-      {
-        url: "/social.png",
-        width: 1200,
-        height: 630,
-        alt: "Aashay Agrawal - Portfolio",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Aashay Agrawal",
-    description: "Portfolio",
-    images: ["/social.png"],
-  },
 };
 
 export default function RootLayout({
