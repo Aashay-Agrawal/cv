@@ -25,13 +25,12 @@ const deploymentUrl =
   (process.env.VERCEL_URL
     ? `https://${process.env.VERCEL_URL}`
     : "http://localhost:3000");
-const socialImageUrl = new URL("/social.png?v=2", deploymentUrl).toString();
+const socialImageUrl = new URL("/social.png", deploymentUrl).toString();
 
 export const metadata: Metadata = {
   metadataBase: new URL(deploymentUrl),
   title: "Aashay Agrawal",
-  description:
-    "Web & Brand Designer.",
+  description: "Portfolio",
   icons: {
     icon: "/favicon.png",
   },
@@ -41,8 +40,7 @@ export const metadata: Metadata = {
   robots: "index, follow",
   openGraph: {
     title: "Aashay Agrawal",
-    description:
-      "Web & Brand Designer.",
+    description: "Portfolio",
     type: "website",
     locale: "en_US",
     siteName: "Aashay Agrawal",
@@ -53,31 +51,14 @@ export const metadata: Metadata = {
         width: 1200,
         height: 630,
         alt: "Aashay Agrawal Portfolio",
-        type: "image/png",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Aashay Agrawal",
-    description:
-      "Web & Brand Designer",
+    description: "Portfolio",
     images: [socialImageUrl],
-  },
-  other: {
-    // Additional meta tags for better Discord/Telegram compatibility
-    "theme-color": "#000000",
-    "color-scheme": "light",
-    // Discord-specific meta tags
-    "discord:invite": "",
-    // Additional OpenGraph tags for better compatibility
-    "og:image:secure_url": socialImageUrl,
-    "og:image:type": "image/png",
-    // Telegram-specific meta tags
-    "telegram:channel": "",
-    // Additional meta tags for better social media compatibility
-    "msapplication-TileColor": "#000000",
-    "msapplication-config": "/browserconfig.xml",
   },
 };
 
