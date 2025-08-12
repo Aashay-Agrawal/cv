@@ -44,11 +44,20 @@ export const metadata: Metadata = {
     locale: "en_US",
     siteName: "Aashay Agrawal",
     url: deploymentUrl,
+    images: [
+      {
+        url: "/social.png",
+        width: 1200,
+        height: 630,
+        alt: "Aashay Agrawal - Portfolio",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Aashay Agrawal",
     description: "Portfolio",
+    images: ["/social.png"],
   },
 };
 
