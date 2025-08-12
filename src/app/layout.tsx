@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
-import { Cascadia_Mono } from "next/font/google";
+import { JetBrains_Mono } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -11,7 +11,7 @@ const geistSans = Geist({
   fallback: ["system-ui", "arial"],
 });
 
-const cascadiaMono = Cascadia_Mono({
+const jetbrainsMono = JetBrains_Mono({
   variable: "--font-cascadia-mono",
   subsets: ["latin"],
   display: "swap",
@@ -19,7 +19,16 @@ const cascadiaMono = Cascadia_Mono({
   fallback: ["ui-monospace", "SFMono-Regular", "Consolas", "monospace"],
 });
 
+// Resolve the deployment base URL for absolute social image URLs
+const deploymentUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ||
+  (process.env.VERCEL_URL
+    ? `https://${process.env.VERCEL_URL}`
+    : "http://localhost:3000");
+const socialImageUrl = new URL("/social.png", deploymentUrl).toString();
+
 export const metadata: Metadata = {
+  metadataBase: new URL(deploymentUrl),
   title: "Aashay Agrawal",
   description: "Portfolio",
   icons: {
@@ -34,9 +43,11 @@ export const metadata: Metadata = {
     description: "Portfolio",
     type: "website",
     locale: "en_US",
+    siteName: "Aashay Agrawal",
+    url: deploymentUrl,
     images: [
       {
-        url: "/social.png",
+        url: socialImageUrl,
         width: 1200,
         height: 630,
         alt: "Aashay Agrawal Portfolio",
@@ -47,7 +58,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Aashay Agrawal",
     description: "Portfolio",
-    images: ["/social.png"],
+    images: [socialImageUrl],
   },
 };
 
@@ -59,7 +70,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${cascadiaMono.variable} antialiased`}
+        className={`${geistSans.variable} ${jetbrainsMono.variable} antialiased`}
       >
         {children}
       </body>
