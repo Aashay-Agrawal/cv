@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
-import { JetBrains_Mono } from "next/font/google";
+import { Cascadia_Mono } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -11,7 +11,7 @@ const geistSans = Geist({
   fallback: ["system-ui", "arial"],
 });
 
-const jetbrainsMono = JetBrains_Mono({
+const cascadiaMono = Cascadia_Mono({
   variable: "--font-cascadia-mono",
   subsets: ["latin"],
   display: "swap",
@@ -70,7 +70,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${jetbrainsMono.variable} antialiased`}
+        className={`${geistSans.variable} ${cascadiaMono.variable} antialiased`}
       >
         {children}
       </body>
