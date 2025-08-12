@@ -24,20 +24,20 @@ const ProjectsSection = memo(() => {
   const projects = [
     {
       href: "https://aashay.framer.website",
-      title: "Work:Collection of all my Design Experiments",
+      title: "Crafts: Collection of all my Design Experiments",
     },
     {
       href: "404",
-      title: "Component Library:Collection of Framer Components",
+      title: "Component Library: Collection of Framer Components",
     },
     {
       href: "https://aashayagrawal.gumroad.com/",
-      title: "Gumroad Store:Framer Templates",
+      title: "Gumroad Store: Framer Templates",
     },
 
     {
       href: "https://aashay.framer.website/books",
-      title: "BookShelf:My Reading List",
+      title: "BookShelf: My Reading List",
     },
     {
       href: "https://aashayagrawal.substack.com/",

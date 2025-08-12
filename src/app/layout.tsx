@@ -21,8 +21,7 @@ const cascadiaMono = Cascadia_Mono({
 
 export const metadata: Metadata = {
   title: "Aashay Agrawal",
-  description:
-    "Portfolio",
+  description: "Portfolio",
   icons: {
     icon: "/favicon.png",
   },
@@ -32,16 +31,23 @@ export const metadata: Metadata = {
   robots: "index, follow",
   openGraph: {
     title: "Aashay Agrawal",
-    description:
-      "Portfolio",
+    description: "Portfolio",
     type: "website",
     locale: "en_US",
+    images: [
+      {
+        url: "/social.png",
+        width: 1200,
+        height: 630,
+        alt: "Aashay Agrawal Portfolio",
+      },
+    ],
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "Aashay Agrawal",
-    description:
-      "Portfolio",
+    description: "Portfolio",
+    images: ["/social.png"],
   },
 };
 
