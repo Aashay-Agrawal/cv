@@ -25,7 +25,6 @@ const deploymentUrl =
   (process.env.VERCEL_URL
     ? `https://${process.env.VERCEL_URL}`
     : "http://localhost:3000");
-const socialImageUrl = new URL("/social.png", deploymentUrl).toString();
 
 export const metadata: Metadata = {
   metadataBase: new URL(deploymentUrl),
@@ -45,20 +44,11 @@ export const metadata: Metadata = {
     locale: "en_US",
     siteName: "Aashay Agrawal",
     url: deploymentUrl,
-    images: [
-      {
-        url: socialImageUrl,
-        width: 1200,
-        height: 630,
-        alt: "Aashay Agrawal Portfolio",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Aashay Agrawal",
     description: "Portfolio",
-    images: [socialImageUrl],
   },
 };
 
