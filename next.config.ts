@@ -18,10 +18,6 @@ const nextConfig: NextConfig = {
     contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
 
-  // Static generation optimization
-  output: "export",
-  trailingSlash: true,
-
   // Bundle analyzer for monitoring
   webpack: (config, { dev, isServer }) => {
     if (process.env.ANALYZE === "true" && !dev && !isServer) {
@@ -57,7 +53,7 @@ const nextConfig: NextConfig = {
           },
           {
             key: "Cache-Control",
-            value: "public, max-age=31536000, immutable",
+            value: "public, max-age=0, must-revalidate",
           },
         ],
       },
