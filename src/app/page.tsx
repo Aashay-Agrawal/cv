@@ -24,7 +24,7 @@ const ProjectsSection = memo(() => {
   const projects = [
     {
       href: "https://aashay.framer.website",
-      title: "Crafts: Collection of all my Design Experiments",
+      title: "Artifacts: Collection of all my Design Experiments",
     },
     {
       href: "404",
