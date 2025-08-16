@@ -58,7 +58,7 @@ const ContactSection = memo(
           For contract work or full time opportunities, reach out via{" "}
           <a
             href={`https://mail.google.com/mail/?view=cm&to=${contact.email}`}
-            className="underline-offset-2 hover:underline transition-all duration-200"
+            className="underline-offset-2 underline hover:text-blue-500 transition-all duration-200"
             rel="noopener noreferrer"
           >
             email
@@ -66,7 +66,7 @@ const ContactSection = memo(
           or schedule a{" "}
           <a
             href={contact.calendar}
-            className="underline-offset-2 hover:underline transition-all duration-200"
+            className="underline-offset-2 underline hover:text-blue-500 transition-all duration-200"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -75,7 +75,7 @@ const ContactSection = memo(
           . or Hire for freelance via{" "}
           <a
             href={contact.freelance}
-            className="underline-offset-2 hover:underline transition-all duration-200"
+            className="underline-offset-2 underline hover:text-blue-500 transition-all duration-200"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -119,7 +119,6 @@ SocialsSection.displayName = "SocialsSection";
 export default async function Portfolio() {
   // Fetch data on each request (Server-side rendering)
   const data = await getPortfolioData();
-
   return (
     <div className="font-mono h-fit overflow-visible bg-white text-neutral-900">
       <div className="px-4 py-0 max-w-xl mx-auto flex flex-col gap-12 my-12">
