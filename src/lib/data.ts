@@ -42,7 +42,7 @@ Putting yourself into a single title or label feels like bondage, and I'm not so
     },
     {
       href: "https://aashayagrawal.gumroad.com/",
-      title: "Gumroad Store: Framer Templates and Components",
+      title: "LemonSqueezy Store: Framer Templates and Components",
     },
     {
       href: "https://aashay.framer.website/books",
