@@ -61,8 +61,9 @@ Putting yourself into a single title or label feels like bondage, and I'm not so
   socials: [
     { href: "https://twitter.com/_aashay_", label: "Twitter" },
     { href: "https://instagram.com/asyagra", label: "Instagram" },
+    { href: "https://t.me/aashayagrawal", label: "Telegram" },
     { href: "https://linkedin.com/in/aashayagrawal", label: "LinkedIn" },
-    { href: "/resume.pdf", label: "Resume" },
+    // { href: "/resume.pdf", label: "Resume" },
   ],
 };
 
