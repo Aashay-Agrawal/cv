@@ -37,11 +37,11 @@ Putting yourself into a single title or label feels like bondage, and I'm not so
       title: "Artifacts: Collection of all my Design Experiments",
     },
     {
-      href: "404",
+      href: "",
       title: "Component Library: Collection of Framer Components",
     },
     {
-      href: "https://aashayagrawal.gumroad.com/",
+      href: "https://aashayagrawal.lemonsqueezy.com/",
       title: "LemonSqueezy Store: Framer Templates and Components",
     },
     {
@@ -61,8 +61,8 @@ Putting yourself into a single title or label feels like bondage, and I'm not so
   socials: [
     { href: "https://twitter.com/_aashay_", label: "Twitter" },
     { href: "https://instagram.com/asyagra", label: "Instagram" },
-    { href: "https://t.me/aashayagrawal", label: "Telegram" },
     { href: "https://linkedin.com/in/aashayagrawal", label: "LinkedIn" },
+    { href: "https://t.me/aashayagrawal", label: "Telegram" },
     // { href: "/resume.pdf", label: "Resume" },
   ],
 };
