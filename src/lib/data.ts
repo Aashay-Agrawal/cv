@@ -38,7 +38,7 @@ Putting yourself into a single title or label feels like bondage, and I'm not so
     },
     {
       href: "",
-      title: "Component Library: Collection of Framer Components",
+      title: "Rive Interactions: Collection of my Rive Creations",
     },
     {
       href: "https://aashayagrawal.lemonsqueezy.com/",
