@@ -12,7 +12,7 @@ const cascadiaMono = Cascadia_Mono({
 
 export const metadata: Metadata = {
   title: "Aashay Agrawal",
-  description: "Web & Brand Designer",
+  description: "Web Designer",
   icons: {
     icon: "/favicon.png",
   },
