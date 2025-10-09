@@ -33,7 +33,7 @@ Putting yourself into a single title or label feels like bondage, and I'm not so
   },
   projects: [
     {
-      href: "https://aashay.framer.website",
+      href: "https://www.are.na/aashay-agrawal/my-work-kxqfnt6xeog",
       title: "Artifacts: Collection of all my Design Experiments",
     },
     {
@@ -45,7 +45,7 @@ Putting yourself into a single title or label feels like bondage, and I'm not so
       title: "LemonSqueezy Store: Framer Templates and Components",
     },
     {
-      href: "https://aashay.framer.website/books",
+      href: "https://aashay.framer.website",
       title: "BookShelf: My Reading List",
     },
     {
