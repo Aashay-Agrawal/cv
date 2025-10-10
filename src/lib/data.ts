@@ -37,7 +37,7 @@ Putting yourself into a single title or label feels like bondage, and I'm not so
       title: "Artifacts: Collection of all my Design Experiments",
     },
     {
-      href: "https://rive.app/@asyagra/",
+      href: "https://rive.app/@aashayagrawal/",
       title: "Rive Interactions: Collection of my Rive Creations",
     },
     {
