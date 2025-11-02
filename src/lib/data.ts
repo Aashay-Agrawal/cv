@@ -19,6 +19,7 @@ export interface PortfolioData {
     email: string;
     calendar: string;
     freelance: string;
+    telegram: string;
   };
   socials: SocialLink[];
 }
@@ -57,13 +58,14 @@ Putting yourself into a single title or label feels like bondage, and I'm not so
     email: "aashayagrawal.work@gmail.com",
     calendar: "https://cal.com/aashayagrawal",
     freelance: "https://contra.com/aashayagrawal",
+    telegram: "https://t.me/aashayagrawal",
   },
   socials: [
     { href: "https://twitter.com/_aashay_", label: "Twitter" },
     { href: "https://instagram.com/asyagra", label: "Instagram" },
     { href: "https://linkedin.com/in/aashayagrawal", label: "LinkedIn" },
-    { href: "https://t.me/aashayagrawal", label: "Telegram" },
-    // { href: "https://www.are.na/aashay-agrawal", label: "Are.na" },
+    // { href: "https://t.me/aashayagrawal", label: "Telegram" },
+    { href: "https://www.are.na/aashay-agrawal", label: "Are.na" },
     // { href: "/resume.pdf", label: "Resume" },
   ],
 };

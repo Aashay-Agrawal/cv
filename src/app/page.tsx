@@ -72,6 +72,15 @@ const ContactSection = memo(
           >
             meet
           </a>
+          or dm me on{" "}
+          <a
+            href={contact.telegram}
+            className="underline-offset-2 underline hover:text-blue-500 transition-all duration-200"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Telegram
+          </a>
           . You can also hire for freelance work via{" "}
           <a
             href={contact.freelance}
