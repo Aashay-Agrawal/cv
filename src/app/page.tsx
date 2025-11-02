@@ -71,7 +71,7 @@ const ContactSection = memo(
             rel="noopener noreferrer"
           >
             meet
-          </a>
+          </a>{" "}
            or DM me on{" "}
           <a
             href={contact.telegram}
