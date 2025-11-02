@@ -49,7 +49,7 @@ const ContactSection = memo(
   ({
     contact,
   }: {
-    contact: { email: string; calendar: string; freelance: string };
+    contact: { email: string; calendar: string; telegram: string; freelance: string };
   }) => (
     <section className="flex flex-col gap-1">
       <h2 className="font-bold text-lg">Contact</h2>
