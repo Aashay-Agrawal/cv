@@ -79,7 +79,7 @@ const ContactSection = memo(
             target="_blank"
             rel="noopener noreferrer"
           >
-            Telegram
+            telegram
           </a>
           . You can also hire for freelance work via{" "}
           <a
