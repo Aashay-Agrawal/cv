@@ -42,8 +42,12 @@ Putting yourself into a single title or label feels like bondage, and I'm not so
       title: "Rive Interactions: Collection of my Rive Creations",
     },
     {
-      href: "https://aashayagrawal.lemonsqueezy.com/",
-      title: "LemonSqueezy Store: Framer Templates and Components",
+      href: "aashay.framer.website/templates",
+      title: "Framer Templates and Components",
+    },
+    {
+      href: "https://www.unicorn.studio/dashboard/community/aashay",
+      title: "Unicorn Studio: WebGL and Shaders Experiments",
     },
     {
       href: "https://aashay.framer.website",
@@ -64,8 +68,8 @@ Putting yourself into a single title or label feels like bondage, and I'm not so
     { href: "https://twitter.com/_aashay_", label: "Twitter" },
     { href: "https://instagram.com/asyagra", label: "Instagram" },
     { href: "https://linkedin.com/in/aashayagrawal", label: "LinkedIn" },
-    // { href: "https://t.me/aashayagrawal", label: "Telegram" },
-    { href: "https://www.are.na/aashay-agrawal", label: "Are.na" },
+    { href: "https://t.me/aashayagrawal", label: "Telegram" },
+    // { href: "https://www.are.na/aashay-agrawal", label: "Are.na" },
     // { href: "/resume.pdf", label: "Resume" },
   ],
 };
