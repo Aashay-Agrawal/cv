@@ -50,6 +50,10 @@ Putting yourself into a single title or label feels like bondage, and I'm not so
       title: "Unicorn Studio: WebGL and Shaders Experiments",
     },
     {
+      href: "https://instagram.com/asyagra",
+      title: "TouchDesigner: Visual and Audio Reactive Experiments",
+    },
+    {
       href: "https://aashay.framer.website",
       title: "BookShelf: My Reading List",
     },
