@@ -21,7 +21,7 @@ const ProjectsSection = memo(
   ({ projects }: { projects: Array<{ href: string; title: string }> }) => {
     return (
       <section className="flex flex-col gap-1">
-        <h2 className="text-lg font-bold">Side Projects</h2>
+        <h2 className="text-lg font-bold">Projects</h2>
         <ul className="space-y-1 text-neutral-600">
           {projects.map((project, index) => (
             <li key={index} className="flex items-start">
