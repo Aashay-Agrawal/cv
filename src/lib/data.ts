@@ -54,7 +54,7 @@ Putting yourself into a single title or label feels like bondage, and I'm not so
       title: "TouchDesigner: Visual and Audio Reactive Experiments",
     },
     {
-      href: "https://aashay.framer.website",
+      href: "https://aashay.framer.website/bookshelf",
       title: "BookShelf: My Reading List",
     },
     {
