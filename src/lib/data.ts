@@ -43,7 +43,7 @@ Putting yourself into a single title or label feels like bondage, and I'm not so
     },
     {
       href: "https://aashay.framer.website/templates",
-      title: "Framer Templates and Components",
+      title: "Store: Framer Templates and Components",
     },
     {
       href: "https://www.unicorn.studio/dashboard/community/aashay",
