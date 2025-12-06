@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Cascadia_Mono } from "next/font/google";
 import "./globals.css";
 
@@ -8,6 +8,7 @@ const cascadiaMono = Cascadia_Mono({
   display: "swap",
   preload: true,
   fallback: ["ui-monospace", "SFMono-Regular", "Consolas", "monospace"],
+  adjustFontFallback: false,
 });
 
 export const metadata: Metadata = {
@@ -18,8 +19,12 @@ export const metadata: Metadata = {
   },
   keywords: "Aashay Agrawal, designer, portfolio, creative, freelance",
   authors: [{ name: "Aashay Agrawal" }],
-  viewport: "width=device-width, initial-scale=1",
   robots: "index, follow",
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({

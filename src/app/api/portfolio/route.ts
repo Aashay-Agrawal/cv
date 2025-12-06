@@ -6,7 +6,7 @@ export async function GET() {
   try {
     const data = await getPortfolioData();
     return NextResponse.json(data);
-  } catch (error) {
+  } catch {
     return NextResponse.json(
       { error: "Failed to fetch portfolio data" },
       { status: 500 }
@@ -27,7 +27,7 @@ export async function POST(request: NextRequest) {
       message: "Data update received",
       data: body,
     });
-  } catch (error) {
+  } catch {
     return NextResponse.json(
       { error: "Failed to update portfolio data" },
       { status: 500 }
