@@ -88,7 +88,7 @@ const ContactSection = memo(
             target="_blank"
             rel="noopener noreferrer"
           >
-            Contra
+            contra
           </a>
         </p>
       </div>
