@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   icons: {
     icon: "/favicon.png",
   },
-  keywords: "Aashay Agrawal, designer, portfolio, creative, freelance",
+  keywords: "Aashay Agrawal, Designer, Portfolio, Creative, Freelancer",
   authors: [{ name: "Aashay Agrawal" }],
   robots: "index, follow",
 };
