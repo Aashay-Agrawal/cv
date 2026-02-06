@@ -42,7 +42,7 @@ Putting yourself into a single title or label feels like bondage, and I'm not so
       title: "Rive Interactions: Collection of my Rive Creations",
     },
     {
-      href: "https://aashay.framer.website/templates",
+      href: "https://aashay.framer.website/store",
       title: "Store: Framer Templates and Components",
     },
     {
