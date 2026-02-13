@@ -42,12 +42,12 @@ Putting yourself into a single title or label feels like bondage, and I'm not so
       title: "Rive Interactions: Collection of my Rive Creations",
     },
     {
-      href: "https://aashay.framer.website/store",
+      href: "https://contra.com/aashayagrawal/products?r=aashayagrawal",
       title: "Store: Framer Templates and Components",
     },
     {
       href: "https://www.unicorn.studio/dashboard/community/aashay",
-      title: "Unicorn Studio: WebGL and Shaders",
+      title: "Unicorn Studio: WebGL and Shaders Experiments",
     },
     {
       href: "https://aashay.framer.website/bookshelf",
