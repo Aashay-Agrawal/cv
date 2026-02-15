@@ -61,7 +61,7 @@ Putting yourself into a single title or label feels like bondage, and I'm not so
   contact: {
     email: "aashayagrawal.work@gmail.com",
     calendar: "https://cal.com/aashayagrawal",
-    freelance: "https://contra.com/aashayagrawal",
+    freelance: "https://contra.com/aashayagrawal/work",
     telegram: "https://t.me/aashayagrawal",
   },
   socials: [
