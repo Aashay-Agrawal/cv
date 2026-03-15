@@ -59,6 +59,7 @@ const ContactSection = memo(
           <a
             href={`https://mail.google.com/mail/?view=cm&to=${contact.email}`}
             className="underline-offset-2 underline hover:text-blue-500 transition-all duration-200"
+            target="_blank"
             rel="noopener noreferrer"
           >
             email
