@@ -28,9 +28,10 @@ export interface PortfolioData {
 const defaultData: PortfolioData = {
   about: {
     name: "Aashay Agrawal",
-    text: `Hey, I'm Aashay. I'm a Designer. While I design for a living, I don't really like to label myself as a designer. I'm neither worthy enough to have that title, nor desire enough to earn it. The best way to define me is — I'm just someone you can rent to solve your problems. Basically, my time.
+    text: `Hey, I'm Aashay. I'm a Software Designer. While I define myself as a software designer, I prefer to stay detached from titles. Titles confine the possibilities of existence. The self is an ever-evolving thing, and putting it into labels and fixing it into a rigid state feels like a disservice to it.
 
-Putting yourself into a single title or label feels like bondage, and I'm not someone who does that. I want to be free. Most of what I do in life is simply following my desires sincerely, just going with the flow wherever it takes me. It's like my self is on a raft, drifting down a river without any external force.`,
+Putting yourself into a single title or label feels like bondage, and I'm not someone who does that. I want to be free. Most of what I do in life is simply following my desires sincerely, just going with the flow wherever it takes me. It's like myself on a raft, drifting down a river without trying to force myself to be somewhere.
+`,
   },
   projects: [
     {
@@ -52,6 +53,10 @@ Putting yourself into a single title or label feels like bondage, and I'm not so
     {
       href: "https://aashay.framer.website/bookshelf",
       title: "BookShelf: My Reading List",
+    },
+    {
+      href: "https://medium.com/@aashayagrawal",
+      title: "Notes: On Design and Craft",
     },
     {
       href: "https://aashayagrawal.substack.com/",
