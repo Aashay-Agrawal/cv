@@ -28,7 +28,7 @@ const ProjectsSection = memo(
               <span className="mr-3">•</span>
               <a
                 href={project.href}
-                className="hover:text-blue-500 transition-colors duration-200 text-base"
+                className="hover:text-[#007CFF] transition-colors duration-200 text-base"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -58,7 +58,7 @@ const ContactSection = memo(
           For contract work or full-time opportunities, feel free to reach out via{" "}
           <a
             href={`https://mail.google.com/mail/?view=cm&to=${contact.email}`}
-            className="underline-offset-2 underline hover:text-blue-500 transition-all duration-200"
+            className="underline-offset-2 underline hover:text-[#007CFF] transition-all duration-200"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -67,7 +67,7 @@ const ContactSection = memo(
           or schedule a{" "}
           <a
             href={contact.calendar}
-            className="underline-offset-2 underline hover:text-blue-500 transition-all duration-200"
+            className="underline-offset-2 underline hover:text-[#007CFF] transition-all duration-200"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -76,7 +76,7 @@ const ContactSection = memo(
            or DM me on{" "}
           <a
             href={contact.telegram}
-            className="underline-offset-2 underline hover:text-blue-500 transition-all duration-200"
+            className="underline-offset-2 underline hover:text-[#007CFF] transition-all duration-200"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -85,7 +85,7 @@ const ContactSection = memo(
           . You can also hire for freelance work via{" "}
           <a
             href={contact.freelance}
-            className="underline-offset-2 underline hover:text-blue-500 transition-all duration-200"
+            className="underline-offset-2 underline hover:text-[#007CFF] transition-all duration-200"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -110,7 +110,7 @@ const SocialsSection = memo(
             <Link
               key={social.label}
               href={social.href}
-              className="text-blue-500 text-base font-normal hover:underline transition-all duration-200"
+              className="text-[#007CFF] text-base font-normal hover:underline transition-all duration-200"
               target="_blank"
               rel="noopener noreferrer"
             >
