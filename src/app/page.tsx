@@ -130,19 +130,21 @@ export default async function Portfolio() {
   // Fetch data on each request (Server-side rendering)
   const data = await getPortfolioData();
   return (
-    <div className="font-mono h-fit overflow-visible bg-white text-neutral-900">
-      <div className="px-4 py-0 max-w-xl mx-auto flex flex-col gap-12 my-12">
-        {/* Header and About Section */}
-        <AboutSection name={data.about.name} text={data.about.text} />
+    <div className="font-mono min-h-screen flex flex-col overflow-visible bg-white text-neutral-900">
+      <div className="flex-1 flex flex-col justify-center px-4 py-12">
+        <div className="max-w-xl mx-auto w-full flex flex-col gap-12">
+          {/* Header and About Section */}
+          <AboutSection name={data.about.name} text={data.about.text} />
 
-        {/* Side Projects Section */}
-        <ProjectsSection projects={data.projects} />
+          {/* Side Projects Section */}
+          <ProjectsSection projects={data.projects} />
 
-        {/* Contact Section */}
-        <ContactSection contact={data.contact} />
+          {/* Contact Section */}
+          <ContactSection contact={data.contact} />
 
-        {/* Socials Section */}
-        <SocialsSection socials={data.socials} />
+          {/* Socials Section */}
+          <SocialsSection socials={data.socials} />
+        </div>
       </div>
     </div>
   );
