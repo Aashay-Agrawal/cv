@@ -30,8 +30,7 @@ const defaultData: PortfolioData = {
     name: "Aashay Agrawal",
     text: `Hey, I'm Aashay. I'm a Software Designer. While I define myself as a software designer, I prefer to stay detached from titles. Titles confine the possibilities of existence. The self is an ever-evolving thing, and putting it into labels and fixing it into a rigid state feels like a disservice to it.
 
-Putting yourself into a single title or label feels like bondage, and I'm not someone who does that. I love being free. Most of what I do in life is simply following my desires sincerely, just going with the flow wherever it takes me. It's like myself on a raft, drifting down a river without trying to force myself to be somewhere.
-`,
+Putting yourself into a single title or label feels like bondage, and I'm not someone who does that. I love being free. Most of what I do in life is simply following my desires sincerely, just going with the flow wherever it takes me.`,
   },
   projects: [
     {
