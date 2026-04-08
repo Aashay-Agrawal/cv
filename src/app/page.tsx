@@ -91,6 +91,7 @@ const ContactSection = memo(
           >
             contra
           </a>
+          .
         </p>
       </div>
     </section>
@@ -132,7 +133,7 @@ export default async function Portfolio() {
   return (
     <div className="font-mono min-h-screen flex flex-col overflow-visible bg-white text-neutral-900">
       <div className="flex-1 flex flex-col justify-center px-4 py-12">
-        <div className="max-w-xl mx-auto w-full flex flex-col gap-12">
+        <div className="max-w-[590px] mx-auto w-full flex flex-col gap-12">
           {/* Header and About Section */}
           <AboutSection name={data.about.name} text={data.about.text} />
 
