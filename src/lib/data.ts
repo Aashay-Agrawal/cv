@@ -28,9 +28,9 @@ export interface PortfolioData {
 const defaultData: PortfolioData = {
   about: {
     name: "Aashay Agrawal",
-    text: `Hey, I'm Aashay. I'm a Software Designer. While I define myself as a software designer, I prefer to stay detached from titles. Titles confine the possibilities of existence. The self is an ever-evolving thing, and putting it into labels and fixing it into a rigid state feels like a disservice to it.
+    text: `Hey, I'm Aashay. I'm a Multidisciplinary Designer. Though I try not to let that title define me. I feel like the self is ever-evolving, constantly shifting, being shaped by new experiences, new ideas, new obsessions. Pinning it down to a single word feels like such a disservice to that process and existence.
 
-Putting yourself into a single title or label feels like bondage, and I'm not someone who does that. I love being free. Most of what I do in life is simply following my desires sincerely, just going with the flow wherever it takes me.`,
+There's something almost violent about it, the way we reduce this whole living, breathing, changing thing into a neat little box for others to categorize it. Most of what I do in life is simply follow my desires sincerely. I don't have a grand plan for life, all I have is genuine curiosity leading the way, wherever it takes me.`,
   },
   projects: [
     {
