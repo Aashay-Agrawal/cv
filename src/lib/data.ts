@@ -54,7 +54,7 @@ There's something almost violent about it, the way we reduce this whole living, 
       title: "BookShelf: My Reading List",
     },
     {
-      href: "https://medium.com/@aashayagrawal",
+      href: "https://aashayagrawal.substack.com/t/design",
       title: "Notes: On Design and Craft",
     },
     {
