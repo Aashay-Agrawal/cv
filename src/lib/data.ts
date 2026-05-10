@@ -46,10 +46,6 @@ There's something almost violent about it, the way we reduce this whole living, 
       title: "Store: Framer Templates and Components",
     },
     {
-      href: "https://www.unicorn.studio/dashboard/community/aashay",
-      title: "Unicorn Studio: WebGL and Shaders Experiments",
-    },
-    {
       href: "https://aashay.framer.website/bookshelf",
       title: "BookShelf: My Reading List",
     },
