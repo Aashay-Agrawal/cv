@@ -68,7 +68,7 @@ There's something almost violent about it, the way we reduce this whole living, 
     { href: "https://twitter.com/_aashay_", label: "Twitter" },
     { href: "https://instagram.com/asyagra", label: "Instagram" },
     { href: "https://linkedin.com/in/aashayagrawal", label: "LinkedIn" },
-    { href: "https://www.patreon.com/cw/AashayAgrawal", label: "Patreon" },
+    { href: "https://www.patreon.com/cw/aashayagrawal", label: "Patreon" },
     // { href: "/resume.pdf", label: "Resume" },
   ],
 };
