@@ -13,6 +13,7 @@ import type { ReactNode } from "react";
 import type { IconSvgElement } from "@hugeicons/react";
 import { getPortfolioData } from "@/lib/data";
 import { cdnWorkMedia } from "@/lib/work-media-data";
+import type { CdnWorkMediaData, WorkMediaType } from "@/lib/work-media-data";
 import { WorkVideo } from "./work-video";
 
 export const metadata = {
@@ -32,8 +33,6 @@ const VIDEO_EXTENSIONS = new Set([
   ".webm",
 ]);
 
-type WorkMediaType = "image" | "video";
-
 type WorkMediaData = {
   alt?: string;
   autoPlay?: boolean;
@@ -47,22 +46,6 @@ type WorkMediaData = {
   type: WorkMediaType;
   width?: number;
 };
-
-type CdnWorkMediaData =
-  | string
-  | {
-      alt?: string;
-      autoPlay?: boolean;
-      controls?: boolean;
-      height?: number;
-      loop?: boolean;
-      muted?: boolean;
-      playsInline?: boolean;
-      poster?: string;
-      src: string;
-      type?: WorkMediaType;
-      width?: number;
-    };
 
 function getUrlPathname(src: string) {
   try {
@@ -201,8 +184,7 @@ function getCdnImageDimensions(src: string, media: CdnWorkMediaData) {
 }
 
 function getCdnWorkMedia(): WorkMediaData[] {
-  const media: Array<WorkMediaData | null> = (cdnWorkMedia as CdnWorkMediaData[])
-    .map((media) => {
+  const media: Array<WorkMediaData | null> = cdnWorkMedia.map((media) => {
       const src = typeof media === "string" ? media : media.src;
       const type = getMediaType(src, typeof media === "string" ? undefined : media.type);
 
@@ -352,7 +334,7 @@ function FloatingWorkBar({
   return (
     <nav
       aria-label="Work page shortcuts"
-      className="fixed bottom-[calc(env(safe-area-inset-bottom)+14px)] left-1/2 z-20 flex -translate-x-1/2 items-center gap-1 rounded-full border border-[#F5F5F5] bg-white p-1 shadow-[0_2px_2px_#00000014,0_12px_20px_#0000001F]"
+      className="fixed bottom-[calc(env(safe-area-inset-bottom)+14px)] left-1/2 z-[999] flex -translate-x-1/2 items-center gap-1 rounded-full border border-[#F5F5F5] bg-white p-1 shadow-[0_2px_2px_#00000014,0_12px_20px_#0000001F]"
     >
       <BarIconLink href="/" label="Back to home">
         <WorkBarIcon icon={ArrowLeft02Icon} />
@@ -386,20 +368,22 @@ export default async function WorkPage() {
     socials.find((social) => social.label === "Instagram")?.href ?? "";
 
   return (
-    <main className="page-enter-from-bottom font-mono min-h-screen bg-white p-[10px] pb-24 text-neutral-900">
+    <>
       <FloatingWorkBar
         calendar={contact.calendar}
         freelance={contact.freelance}
         instagram={instagram}
         twitter={twitter}
       />
-      {media.length > 0 ? (
-        <div className="columns-2 gap-[6px]">
-          {media.map((item) => (
-            <WorkMedia key={item.src} {...item} />
-          ))}
-        </div>
-      ) : null}
-    </main>
+      <main className="page-enter-from-bottom relative min-h-screen bg-white font-mono text-neutral-900">
+        {media.length > 0 ? (
+          <div className="columns-2 gap-[6px] p-[10px]">
+            {media.map((item) => (
+              <WorkMedia key={item.src} {...item} />
+            ))}
+          </div>
+        ) : null}
+      </main>
+    </>
   );
 }
