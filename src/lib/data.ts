@@ -42,7 +42,7 @@ There's something almost violent about it, the way we reduce this whole living, 
       title: "Rive Interactions: Collection of my Rive Creations",
     },
     {
-      href: "https://contra.com/aashayagrawal/products?r=aashayagrawal",
+      href: "https://www.framer.com/@aashayagrawal/",
       title: "Store: Framer Templates and Components",
     },
     {
