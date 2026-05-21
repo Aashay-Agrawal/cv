@@ -34,7 +34,7 @@ There's something almost violent about it, the way we reduce this whole living, 
   },
   projects: [
     {
-      href: "https://aashay.framer.website/",
+      href: "/work",
       title: "Artifacts: Collection of all my Design Experiments",
     },
     {

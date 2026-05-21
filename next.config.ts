@@ -6,6 +6,10 @@ const nextConfig: NextConfig = {
     optimizePackageImports: ["tailwindcss"],
   },
 
+  // Next.js 16 uses Turbopack by default. The project keeps a webpack hook
+  // for optional bundle analysis, so make the default Turbopack path explicit.
+  turbopack: {},
+
   // Compression and optimization
   compress: true,
   poweredByHeader: false,

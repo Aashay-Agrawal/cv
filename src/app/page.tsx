@@ -23,19 +23,31 @@ const ProjectsSection = memo(
       <section className="flex flex-col gap-1">
         <h2 className="text-lg font-bold">Projects</h2>
         <ul className="space-y-1 text-neutral-600">
-          {projects.map((project, index) => (
-            <li key={index} className="flex items-start">
-              <span className="mr-3">•</span>
-              <a
-                href={project.href}
-                className="hover:text-[#007CFF] transition-colors duration-200 text-base"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                {project.title}
-              </a>
-            </li>
-          ))}
+          {projects.map((project, index) => {
+            const isInternalLink = project.href.startsWith("/");
+            const className =
+              "hover:text-[#007CFF] transition-colors duration-200 text-base";
+
+            return (
+              <li key={index} className="flex items-start">
+                <span className="mr-3">•</span>
+                {isInternalLink ? (
+                  <Link href={project.href} className={className}>
+                    {project.title}
+                  </Link>
+                ) : (
+                  <a
+                    href={project.href}
+                    className={className}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {project.title}
+                  </a>
+                )}
+              </li>
+            );
+          })}
         </ul>
       </section>
     );
@@ -131,7 +143,7 @@ export default async function Portfolio() {
   // Fetch data on each request (Server-side rendering)
   const data = await getPortfolioData();
   return (
-    <div className="font-mono min-h-screen flex flex-col overflow-visible bg-white text-neutral-900">
+    <div className="page-enter-from-bottom font-mono min-h-screen flex flex-col overflow-visible bg-white text-neutral-900">
       <div className="flex-1 flex flex-col justify-center px-4 py-12">
         <div className="max-w-xl mx-auto w-full flex flex-col gap-12">
           {/* Header and About Section */}
