@@ -15,7 +15,7 @@ import { getPortfolioData } from "@/lib/data";
 
 export const metadata = {
   title: "Work | Aashay Agrawal",
-  description: "A visual archive of selected work by Aashay Agrawal.",
+  description: "Artifacts of my Design Experiments",
 };
 
 const WORK_DIR = path.join(process.cwd(), "public", "work");
