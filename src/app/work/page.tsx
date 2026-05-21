@@ -152,7 +152,7 @@ function FloatingWorkBar({
         <WorkBarIcon icon={ArrowLeft02Icon} />
       </BarIconLink>
       <BarIconLink href={twitter} label="X (Twitter)" external>
-        <WorkBarIcon icon={NewTwitterIcon} />
+        <WorkBarIcon icon={NewTwitterIcon}  className="scale-[0.90]"/>
       </BarIconLink>
       <BarIconLink href={calendar} label="Schedule a meeting" external>
         <WorkBarIcon icon={Calendar03Icon} />
