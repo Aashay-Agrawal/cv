@@ -334,7 +334,7 @@ function FloatingWorkBar({
   return (
     <nav
       aria-label="Work page shortcuts"
-      className="fixed bottom-[calc(env(safe-area-inset-bottom)+14px)] left-1/2 z-[999] flex -translate-x-1/2 items-center gap-1 rounded-full border border-[#F5F5F5] bg-white p-1 shadow-[0_2px_2px_#00000014,0_12px_20px_#0000001F]"
+      className="fixed bottom-[calc(env(safe-area-inset-bottom)+14px)] left-1/2 z-[999] flex max-w-[calc(100vw-20px)] -translate-x-1/2 items-center gap-1 rounded-full border border-[#F5F5F5] bg-white p-1 shadow-[0_2px_2px_#00000014,0_12px_20px_#0000001F]"
     >
       <BarIconLink href="/" label="Back to home">
         <WorkBarIcon icon={ArrowLeft02Icon} />
@@ -350,7 +350,7 @@ function FloatingWorkBar({
       </BarIconLink>
       <a
         href={freelance}
-        className="flex h-9 items-center justify-center rounded-full bg-neutral-950 px-3.5 text-sm font-medium leading-5 text-neutral-50 transition-colors duration-200 hover:bg-[#007CFF] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#007CFF]"
+        className="flex h-9 flex-shrink-0 items-center justify-center whitespace-nowrap rounded-full bg-neutral-950 px-3.5 text-sm font-medium leading-5 text-neutral-50 transition-colors duration-200 hover:bg-[#007CFF] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#007CFF]"
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -377,7 +377,7 @@ export default async function WorkPage() {
       />
       <main className="page-enter-from-bottom relative min-h-screen bg-white font-mono text-neutral-900">
         {media.length > 0 ? (
-          <div className="columns-2 gap-[6px] p-[10px]">
+          <div className="columns-1 gap-[6px] p-[10px] sm:columns-2">
             {media.map((item) => (
               <WorkMedia key={item.src} {...item} />
             ))}
