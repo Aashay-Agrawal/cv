@@ -6,8 +6,8 @@ import { getPortfolioData } from "@/lib/data";
 const AboutSection = memo(({ name, text }: { name: string; text: string }) => {
   return (
     <section className="flex flex-col gap-1">
-      <h1 className="text-base font-bold sm:text-xl">{name}</h1>
-      <p className="text-sm leading-relaxed whitespace-pre-line text-neutral-600 sm:text-base">
+      <h1 className="text-[17px] font-bold sm:text-xl">{name}</h1>
+      <p className="text-[15px] leading-relaxed whitespace-pre-line text-neutral-600 sm:text-base">
         {text}
       </p>
     </section>
@@ -21,12 +21,12 @@ const ProjectsSection = memo(
   ({ projects }: { projects: Array<{ href: string; title: string }> }) => {
     return (
       <section className="flex flex-col gap-1">
-        <h2 className="text-base font-bold sm:text-lg">Projects</h2>
+        <h2 className="text-[17px] font-bold sm:text-lg">Projects</h2>
         <ul className="space-y-1 text-neutral-600">
           {projects.map((project, index) => {
             const isInternalLink = project.href.startsWith("/");
             const className =
-              "text-sm transition-colors duration-200 hover:text-[#007CFF] sm:text-base";
+              "text-[15px] transition-colors duration-200 hover:text-[#007CFF] sm:text-base";
 
             return (
               <li key={index} className="flex items-start">
@@ -64,8 +64,8 @@ const ContactSection = memo(
     contact: { email: string; calendar: string; telegram: string; freelance: string };
   }) => (
     <section className="flex flex-col gap-1">
-      <h2 className="text-base font-bold sm:text-lg">Contact</h2>
-      <div className="text-sm text-neutral-600 sm:text-base">
+      <h2 className="text-[17px] font-bold sm:text-lg">Contact</h2>
+      <div className="text-[15px] text-neutral-600 sm:text-base">
         <p>
           For contract work or full-time opportunities, feel free to reach out via{" "}
           <a
@@ -117,13 +117,13 @@ const SocialsSection = memo(
   ({ socials }: { socials: Array<{ href: string; label: string }> }) => {
     return (
       <section className="flex flex-col gap-1">
-        <h2 className="text-base font-bold sm:text-lg">Socials</h2>
+        <h2 className="text-[17px] font-bold sm:text-lg">Socials</h2>
         <div className="flex flex-wrap gap-4">
           {socials.map((social) => (
             <Link
               key={social.label}
               href={social.href}
-              className="text-sm font-normal text-[#007CFF] transition-all duration-200 hover:underline sm:text-base"
+              className="text-[15px] font-normal text-[#007CFF] transition-all duration-200 hover:underline sm:text-base"
               target="_blank"
               rel="noopener noreferrer"
             >
