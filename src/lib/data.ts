@@ -42,12 +42,12 @@ There's something almost violent about it, the way we reduce this whole living, 
       title: "Rive Interactions: Collection of my Rive Creations",
     },
     {
-      href: "https://www.framer.com/@aashayagrawal/",
-      title: "Store: Framer Templates and Components",
-    },
-    {
       href: "https://www.patreon.com/cw/aashayagrawal",
       title: "Patreon: Cavalry and TouchDesigner Projects Files",
+    },
+    {
+      href: "https://www.framer.com/@aashayagrawal/",
+      title: "Store: Framer Templates and Components",
     },
     {
       href: "https://aashay.framer.website/bookshelf",
