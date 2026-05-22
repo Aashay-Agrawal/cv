@@ -334,7 +334,7 @@ function FloatingWorkBar({
   return (
     <nav
       aria-label="Work page shortcuts"
-      className="fixed bottom-[calc(env(safe-area-inset-bottom)+14px)] left-1/2 z-[999] flex max-w-[calc(100vw-20px)] -translate-x-1/2 items-center gap-1 rounded-full border border-[#F5F5F5] bg-white p-1 shadow-[0_2px_2px_#00000014,0_12px_20px_#0000001F]"
+      className="fixed bottom-[calc(env(safe-area-inset-bottom)+14px)] left-1/2 z-[999] flex max-w-[calc(100vw-20px)] -translate-x-1/2 items-center gap-1 rounded-full border border-[#F5F5F5] bg-white p-1 font-mono shadow-[0_2px_2px_#00000014,0_12px_20px_#0000001F]"
     >
       <BarIconLink href="/" label="Back to home">
         <WorkBarIcon icon={ArrowLeft02Icon} />
