@@ -43,7 +43,7 @@ There's something almost violent about it, the way we reduce this whole living, 
     },
     {
       href: "https://www.patreon.com/cw/aashayagrawal",
-      title: "Patreon: Cavalry and TouchDesigner Projects Files",
+      title: "Patreon: Cavalry and TouchDesigner Project Files",
     },
     {
       href: "https://www.framer.com/@aashayagrawal/",
@@ -51,15 +51,11 @@ There's something almost violent about it, the way we reduce this whole living, 
     },
     {
       href: "https://aashay.framer.website/bookshelf",
-      title: "BookShelf: My Reading List",
-    },
-    {
-      href: "https://aashayagrawal.substack.com/t/design",
-      title: "Notes: On Design and Craft",
+      title: "Bookshelf: My Reading List",
     },
     {
       href: "https://aashayagrawal.substack.com/",
-      title: "Writing @substack",
+      title: "Notes: Essays on Design and Craft",
     },
   ],
   contact: {

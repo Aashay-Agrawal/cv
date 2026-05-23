@@ -67,7 +67,7 @@ const ContactSection = memo(
       <h2 className="text-[17px] font-bold sm:text-lg">Contact</h2>
       <div className="text-[15px] text-neutral-600 sm:text-base">
         <p>
-          For contract work or full-time opportunities, feel free to reach out via{" "}
+          For full-time opportunities or contract work, feel free to reach out via{" "}
           <a
             href={`https://mail.google.com/mail/?view=cm&to=${contact.email}`}
             className="underline-offset-2 underline hover:text-[#007CFF] transition-all duration-200"
