@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Cascadia_Mono } from "next/font/google";
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 const cascadiaMono = Cascadia_Mono({
@@ -34,7 +35,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${cascadiaMono.variable} antialiased`}>{children}</body>
+      <body className={`${cascadiaMono.variable} antialiased`}>
+        {children}
+        <Analytics />
+      </body>
     </html>
   );
 }
