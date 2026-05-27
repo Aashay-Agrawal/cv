@@ -77,4 +77,3 @@ There's something almost violent about it, the way we reduce this whole living, 
 export async function getPortfolioData(): Promise<PortfolioData> {
   return defaultData;
 }
-  
