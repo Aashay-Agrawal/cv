@@ -20,14 +20,9 @@ export type CdnWorkMediaData =
 // Plain links are auto-detected by extension. Use an object when a URL does not
 // end in a normal image/video extension, or when you want a poster/alt label.
 export const cdnWorkMedia: CdnWorkMediaData[] = [
-  // "https://media.contra.com/image/upload/w_1500/ruevkk9umcj92kifqibs.avif",
+"https://d2w9rnfcy7mm78.cloudfront.net/46782762/original_1001639792a7a114425c72688b3f7102.png?1780688700?bc=0",
 
-  // "https://framerusercontent.com/assets/ity6Po9Mp5dbXjdaZGxzKDlDQuY.mp4",
 
-  // "https://media.contra.com/video/upload/fl_progressive/w_1600/zqs2zs2hryfttjnv3xaa.mp4",
-  
-  // "https://media.contra.com/video/upload/fl_progressive/w_1200/nlvko77ihanov0wyle08.mp4",
-
-  
-  
 ];
+
+

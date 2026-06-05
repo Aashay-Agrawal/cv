@@ -377,7 +377,7 @@ export default async function WorkPage() {
       />
       <main className="page-enter-from-bottom relative min-h-screen bg-white font-mono text-neutral-900">
         {media.length > 0 ? (
-          <div className="columns-1 gap-[6px] p-[10px] sm:columns-3">
+          <div className="columns-1 gap-[6px] p-[10px] sm:columns-2">
             {media.map((item) => (
               <WorkMedia key={item.src} {...item} />
             ))}
