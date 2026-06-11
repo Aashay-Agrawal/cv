@@ -17,7 +17,7 @@ import type { CdnWorkMediaData, WorkMediaType } from "@/lib/work-media-data";
 import { WorkVideo } from "./work-video";
 
 export const metadata = {
-  title: "Work | Aashay Agrawal",
+  title: "Artifacts",
   description: "Artifacts of my Design Experiments",
 };
 
