@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { memo } from "react";
 import { getPortfolioData } from "@/lib/data";
+import { WorkPreloader } from "./work-preloader";
 
 // Memoized components for better performance
 const AboutSection = memo(({ name, text }: { name: string; text: string }) => {
@@ -143,7 +144,7 @@ export default async function Portfolio() {
   // Fetch data on each request (Server-side rendering)
   const data = await getPortfolioData();
   return (
-    <div className="page-enter-from-bottom font-mono min-h-screen flex flex-col overflow-visible bg-white text-neutral-900">
+    <div className="font-mono min-h-screen flex flex-col overflow-visible bg-white text-neutral-900">
       <div className="flex-1 flex flex-col justify-center px-4 py-12">
         <div className="max-w-xl mx-auto w-full flex flex-col gap-12">
           {/* Header and About Section */}
@@ -159,6 +160,7 @@ export default async function Portfolio() {
           <SocialsSection socials={data.socials} />
         </div>
       </div>
+      <WorkPreloader />
     </div>
   );
 }

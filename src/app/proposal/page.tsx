@@ -305,7 +305,7 @@ export default async function ProposalPage() {
   const emailHref = `https://mail.google.com/mail/?view=cm&to=${contact.email}`;
 
   return (
-    <main className="proposal-page page-enter-from-bottom min-h-screen bg-white font-mono text-neutral-900">
+    <main className="proposal-page min-h-screen bg-white font-mono text-neutral-900">
       <ProposalSmoothScroll />
       <Header />
       <PrintButton />
