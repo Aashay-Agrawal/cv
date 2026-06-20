@@ -60,7 +60,7 @@ There's something almost violent about it, the way we reduce this whole living, 
   ],
   contact: {
     email: "aashayagrawal.work@gmail.com",
-    calendar: "https://cal.com/aashayagrawal",
+    calendar: "https://cal.com/aashayagrawal/30min",
     freelance: "https://contra.com/aashayagrawal/work",
     telegram: "https://t.me/aashayagrawal",
   },
