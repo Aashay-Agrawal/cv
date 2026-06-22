@@ -47,12 +47,22 @@ export function getExtension(src: string) {
   return path.extname(getUrlPathname(src)).toLowerCase();
 }
 
+function getQueryFormatExtension(src: string) {
+  try {
+    const format = new URL(src, "https://local.invalid").searchParams.get("format");
+
+    return format ? `.${format.toLowerCase()}` : "";
+  } catch {
+    return "";
+  }
+}
+
 function getMediaType(src: string, type?: WorkMediaType): WorkMediaType | null {
   if (type) {
     return type;
   }
 
-  const extension = getExtension(src);
+  const extension = getExtension(src) || getQueryFormatExtension(src);
 
   if (IMAGE_EXTENSIONS.has(extension)) {
     return "image";
