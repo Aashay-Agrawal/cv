@@ -22,6 +22,8 @@ export type CdnWorkMediaData =
 export const cdnWorkMedia: CdnWorkMediaData[] = [
 "https://cdn.cosmos.so/3972a5b1-4669-4350-b7a2-443c5a2d1de2?format=webp&w=2048",
 
+
+
 "https://cdn.cosmos.so/0504161f-654b-4758-aee1-a50c6cb158b9?format=webp&w=2048",
 
 ];
