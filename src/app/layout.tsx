@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title: "Aashay Agrawal",
   description: "Hey I'm Aashay, I'm an independent designer working with Framer and Rive to build interactive, high-quality digital experiences.",
   icons: {
-    icon: "/favicon.png",
+    icon: [{ url: "/icon.svg", type: "image/svg+xml" }],
   },
   keywords: "Aashay Agrawal, Designer, Portfolio, Designer, Freelancer",
   authors: [{ name: "Aashay Agrawal" }],
