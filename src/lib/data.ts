@@ -50,7 +50,7 @@ There's something almost violent about it, the way we reduce this whole living, 
       title: "Store: Framer Templates and Components",
     },
     {
-      href: "https://aashay.framer.website/bookshelf",
+      href: "https://aashay.framer.website",
       title: "Bookshelf: My Reading List",
     },
     {
