@@ -62,7 +62,13 @@ const ContactSection = memo(
   ({
     contact,
   }: {
-    contact: { email: string; calendar: string; telegram: string; freelance: string };
+    contact: {
+      email: string;
+      calendar: string;
+      telegram: string;
+      whatsapp: string;
+      freelance: string;
+    };
   }) => (
     <section className="flex flex-col gap-1">
       <h2 className="text-[17px] font-bold sm:text-lg">Contact</h2>
@@ -86,7 +92,7 @@ const ContactSection = memo(
           >
             meet
           </a>{" "}
-           or DM me on{" "}
+          or DM me on{" "}
           <a
             href={contact.telegram}
             className="underline-offset-2 underline hover:text-[#007CFF] transition-all duration-200"
@@ -94,6 +100,15 @@ const ContactSection = memo(
             rel="noopener noreferrer"
           >
             telegram
+          </a>{" "}
+          or{" "}
+          <a
+            href={contact.whatsapp}
+            className="underline-offset-2 underline hover:text-[#007CFF] transition-all duration-200"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            whatsapp
           </a>
           . You can also hire for freelance work via{" "}
           <a

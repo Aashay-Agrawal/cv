@@ -20,6 +20,7 @@ export interface PortfolioData {
     calendar: string;
     freelance: string;
     telegram: string;
+    whatsapp: string;
   };
   socials: SocialLink[];
 }
@@ -63,6 +64,7 @@ There's something almost violent about it, the way we reduce this whole living, 
     calendar: "https://cal.com/aashayagrawal/30min",
     freelance: "https://contra.com/aashayagrawal/work",
     telegram: "https://t.me/aashayagrawal",
+    whatsapp: "https://wa.me/message/FKS3GDOQWFROE1",
   },
   socials: [
     { href: "https://twitter.com/_aashay_", label: "Twitter" },
