@@ -44,7 +44,7 @@ There's something almost violent about it, the way we reduce this whole living, 
     },
     {
       href: "https://www.patreon.com/cw/aashayagrawal",
-      title: "Patreon: Cavalry and TouchDesigner Project Files",
+      title: "Patreon: TouchDesigner and Cavalry Project Files",
     },
     {
       href: "https://www.framer.com/@aashayagrawal/?tab=marketplace",
